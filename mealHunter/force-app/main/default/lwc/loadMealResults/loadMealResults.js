@@ -2,7 +2,7 @@ import { LightningElement, api } from 'lwc';
 
 export default class LoadMealResults extends LightningElement {
     @api mealResult = [];
-    selectedMeal;
+    selectedMeals;
     showModal = false;
     get checkMeals(){
         return typeof(this.mealResult) != 'undefined' && this.mealResult.length > 0;
@@ -14,18 +14,22 @@ export default class LoadMealResults extends LightningElement {
         let selectedMealId = event.detail;
         console.log("selected meal ID : ", selectedMealId);
         console.log("meal Results -- ",this.mealResult);
-       // this.selectedMeal = this.mealResult.find(currItem => currItem.idMeal === selectedMealId);
-       this.selectedMeal = undefined;
+        
+      /*this.selectedMeal = undefined;
     for (let i = 0; i < this.mealResult.length; i++) {
     if (this.mealResult[i].idMeal === selectedMealId) {
         this.selectedMeal = this.mealResult[i];
         break;
-    }
-    } 
-       console.log("selected meal : ", selectedMeal);
+    } */
+        
+        this.selectedMeals = JSON.stringify(this.mealResult);
+
+    /* this.selectedMeals = this.mealResult.find(currItem => currItem.idMeal === selectedMealId);
+    
+       console.log("selected meal : ", selectedMeals);
         this.showModal = true;
-        debugger;
-    }
+        debugger;*/
+    } 
 
     closeHandler(){
         this.showModal = false;

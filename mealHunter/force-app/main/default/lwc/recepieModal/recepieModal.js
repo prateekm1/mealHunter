@@ -1,7 +1,7 @@
 import { LightningElement, api } from 'lwc';
 
 export default class RecepieModal extends LightningElement {
-    @api selectedMeal;
+    @api selectedMeals;
 
     handleClick(){
         let evt = new CustomEvent('closemodal');
