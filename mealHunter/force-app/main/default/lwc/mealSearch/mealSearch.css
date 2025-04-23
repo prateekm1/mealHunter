@@ -1,0 +1,32 @@
+.hero-section{
+    background-image: url('/resource/meal');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.hero-content{
+    background-color: rgba(0,0,0,.5);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    color: black;
+}
+
+.hero-heading{
+    font-size: 26px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+h1{
+    color: white;
+}

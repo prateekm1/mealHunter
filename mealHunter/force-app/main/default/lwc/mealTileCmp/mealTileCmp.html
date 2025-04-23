@@ -1,0 +1,10 @@
+<template>
+    <div class="card">
+        <img class="meal-img" src={meal.strMealThumb} alt={meal.strMeal} />
+        <div class="card-content">
+            <h1 class="header">{meal.strMeal}</h1>
+            <p class="details">{meal.strArea} - {meal.strCategory}</p></h1>
+        </div>
+        <button class="recepie-button" onclick={recepieHandler}>Recepie</button>
+    </div>
+</template>
